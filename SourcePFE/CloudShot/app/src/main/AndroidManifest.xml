@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cloudshot.toufik.cloudshot" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Inscription"
+            android:label="@string/title_activity_inscription"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cloudshot.toufik.cloudshot.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AlbumPhoto"
+            android:label="@string/title_activity_album_photo"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cloudshot.toufik.cloudshot.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PictureParam_Activity"
+            android:label="@string/title_activity_picture_param_"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cloudshot.toufik.cloudshot.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ConnexionActivity"
+            android:label="@string/title_activity_connexion"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cloudshot.toufik.cloudshot.MainActivity" />
+        </activity>
+        <activity
+            android:name=".EditionPhoto"
+            android:label="@string/title_activity_edition_photo"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cloudshot.toufik.cloudshot.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Visionneur"
+            android:label="@string/title_activity_visionneur" >
+        </activity>
+        <activity
+            android:name=".Applications"
+            android:label="@string/title_activity_applications" >
+        </activity>
+    </application>
+
+</manifest>

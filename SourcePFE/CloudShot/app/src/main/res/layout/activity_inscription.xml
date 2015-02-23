@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.cloudshot.toufik.cloudshot.Inscription"
+    android:background="#ff000000">
+
+    <EditText
+        android:id="@+id/edt_a_inscriptionFormNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:ems="12"
+        android:inputType="text"
+        android:textColor="#ffffffff"
+        android:backgroundTint="#ffffffff"
+        android:hint="@string/a_inscription_fomNom"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#ffffffff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edt_a_inscriptionFormPrenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignTop="@+id/edt_a_inscriptionFormNom"
+        android:layout_marginTop="64dp"
+        android:ems="12"
+        android:inputType="text"
+        android:textColor="#ffffffff"
+        android:backgroundTint="#ffffffff"
+        android:layout_alignEnd="@+id/edt_a_inscriptionFormNom"
+        android:textColorHint="#ffffffff"
+        android:hint="@string/a_inscription_fomPrenom"
+        android:layout_alignStart="@+id/edt_a_inscriptionFormNom" />
+
+    <EditText
+        android:id="@+id/edt_a_inscriptionFormIdent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignTop="@+id/edt_a_inscriptionFormPrenom"
+        android:layout_marginTop="64dp"
+        android:ems="12"
+        android:inputType="textWebEmailAddress|textEmailAddress"
+        android:textColor="#ffffffff"
+        android:backgroundTint="#ffffffff"
+        android:layout_alignEnd="@+id/edt_a_inscriptionFormPrenom"
+        android:textColorHint="#ffffffff"
+        android:hint="@string/a_inscription_fomIdent"
+        android:layout_alignStart="@+id/edt_a_inscriptionFormPrenom" />
+
+
+    <EditText
+        android:id="@+id/edt_a_inscriptionFormPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignTop="@+id/edt_a_inscriptionFormIdent"
+        android:layout_marginTop="64dp"
+        android:ems="12"
+        android:password="true"
+        android:textColor="#ffffffff"
+        android:backgroundTint="#ffffffff"
+        android:layout_alignEnd="@+id/edt_a_inscriptionFormIdent"
+        android:textColorHint="#ffffffff"
+        android:hint="@string/a_inscription_fomPass"
+        android:layout_alignStart="@+id/edt_a_inscriptionFormIdent" />
+
+
+
+    <EditText
+        android:id="@+id/edt_a_inscriptionFormPassV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignTop="@+id/edt_a_inscriptionFormPass"
+        android:layout_marginTop="64dp"
+        android:ems="12"
+        android:hint="@string/a_inscription_fomPassV2"
+        android:textColorHint="#ffffffff"
+        android:password="true"
+        android:inputType="textPassword"
+        android:textColor="#ffffffff"
+        android:backgroundTint="#ffffffff"
+        android:layout_alignEnd="@+id/edt_a_inscriptionFormPass"
+        android:layout_alignStart="@+id/edt_a_inscriptionFormPass" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/txv_FormMsgError"
+        android:layout_below="@+id/edt_a_inscriptionFormPassV2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:textStyle="bold"
+        android:textColor="#ffff200e"
+        android:backgroundTint="#ffffffff" />
+
+    <Button
+        android:id="@+id/btnFormAnnuler"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="  Annuler  "
+        android:onClick="annulInscriptionOnClick"
+        android:background="#ffffffff"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/txv_FormMsgError"
+        android:layout_marginRight="80dp"
+        android:layout_alignStart="@+id/edt_a_inscriptionFormPassV2" />
+
+    <Button
+        android:id="@+id/btnFormConfirmer"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Confirmer"
+        android:onClick="confirm_InscriptionOnClick"
+        android:background="#ffffffff"
+        android:layout_below="@+id/txv_FormMsgError"
+        android:layout_marginTop="60dp"
+        android:layout_alignEnd="@+id/edt_a_inscriptionFormPassV2" />
+
+</RelativeLayout>

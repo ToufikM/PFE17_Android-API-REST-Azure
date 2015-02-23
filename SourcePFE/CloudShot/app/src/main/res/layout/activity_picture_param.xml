@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cloudshot.toufik.cloudshot.PictureParam_Activity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ff000000">
+
+    <ImageView
+        android:id="@+id/image_camera"
+        android:contentDescription="@string/image_cd_camera"
+        android:layout_centerHorizontal="true"
+        android:layout_width="fill_parent"
+        android:layout_height="315dp" />
+
+    <EditText
+        android:id="@+id/nomPhoto_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:hint="@string/nomPhotoAjouter"
+        android:textColorHint="#ffffffff"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_camera"
+        android:textColor="#ffffffff"
+        android:backgroundTint="#ffffffff"
+        android:inputType="text"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/LieuPhoto_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="250dp"
+        android:hint="@string/LieuPhotoAjouter"
+        android:textColorHint="#ffffffff"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nomPhoto_et"
+        android:textColor="#ffffffff"
+        android:backgroundTint="#ffffffff"
+        android:inputType="text"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btnConfirmAP"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/LieuPhoto_et"
+        android:text="Vers le nuage"
+        android:backgroundTint="#ffffffff"
+        android:background="#ffffffff"
+        android:onClick="confirmChargPhotoOnClick" />
+
+</RelativeLayout>

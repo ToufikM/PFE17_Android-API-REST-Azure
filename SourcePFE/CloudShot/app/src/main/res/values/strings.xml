@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cloud Shot</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="identifiant_id">Identifiant (E-mail)</string>
+    <string name="password_id">Mot de passe</string>
+    <string name="mdpOublier_id">Mot de Passe oublié ?</string>
+    <string name="createAccountST_id"><u>Créer un Compte</u></string>
+    <string name="boutonConnexion_id">Connexion</string>
+    <string name="title_activity_inscription">Inscription</string>
+    <string name="a_inscription_txvTop">Un Album photo dans le Cloud, simple, efficace et gratuit !</string>
+    <string name="a_inscription_fomNom">Nom</string>
+    <string name="a_inscription_fomPrenom">Prenom</string>
+    <string name="a_inscription_fomIdent">E-mail</string>
+    <string name="a_inscription_fomPass">Mot de passe</string>
+    <string name="a_inscription_fomPassV2">Verification mot de passe</string>
+    <string name="title_activity_album_photo">"Album Photo"</string>
+    <string name="action_pic">Editer</string>
+    <string name="add_pic">Accueil</string>
+    <string name="title_activity_picturer__parameter">Parametres photo</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_picture_param_">Parametres photo</string>
+    <string name="image_cd_camera">Description generique</string>
+    <string name="nomPhotoAjouter">Nom/Description photo</string>
+    <string name="LieuPhotoAjouter">Lieu de la photo</string>
+    <string name="DatePhotoAjouter">Date de la photo</string>
+    <string name="title_activity_connexion">"Connexion "</string>
+    <string name="btn_Inscription">Inscription</string>
+    <string name="title_activity_edition_photo">Modifier / Supprimer</string>
+    <string name="title_activity_visionneur">Visionneur</string>
+    <string name="title_activity_applications">Applications</string>
+
+</resources>

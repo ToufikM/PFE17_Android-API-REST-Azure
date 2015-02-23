@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ciel"
+    tools:context="com.cloudshot.toufik.cloudshot.ConnexionActivity">
+
+    <EditText
+        android:id="@+id/edt_identifiant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/identifiant_id"
+        android:textColorHint="#ff000000"
+        android:ems="13"
+        android:inputType="textWebEmailAddress"
+        android:layout_marginTop="190dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:autoText="false"
+        android:backgroundTint="#ff0300ff"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_id"
+        android:ems="13"
+        android:inputType="textPassword"
+        android:layout_marginTop="235dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:autoText="false"
+        android:backgroundTint="#ff0300ff"
+        android:textColorHint="#ff000000"
+        android:gravity="center_horizontal" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:text="@string/boutonConnexion_id"
+        android:id="@+id/btn_connexion"
+        android:onClick="connexionOnClick"
+        android:layout_below="@+id/edt_password"
+        android:layout_alignEnd="@+id/edt_password" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txv_msgErrorConnexion"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:textColor="#ffff0c0b" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:layout_toLeftOf="@id/btn_connexion"
+        android:id="@+id/checkBoxConnexion"
+        android:layout_alignBottom="@+id/btn_connexion"
+        android:layout_alignStart="@+id/edt_password"
+        android:textColor="#ffff0002"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
